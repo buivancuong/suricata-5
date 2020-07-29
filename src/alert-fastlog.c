@@ -79,7 +79,7 @@ void AlertFastLogRegister(void)
 {
     OutputRegisterPacketModule(LOGGER_ALERT_FAST, MODULE_NAME, "fast",
         AlertFastLogInitCtx, AlertFastLogger, AlertFastLogCondition,
-        AlertFastLogThreadInit, AlertFastLogThreadDeinit, NULL);
+        AlertFastLogThreadInit, AlertFastLogThreadDeinit, AlertFastLogExitPrintStats);
     AlertFastLogRegisterTests();
 }
 
@@ -97,7 +97,11 @@ static inline void AlertFastLogOutputAlert(AlertFastLogThread *aft, char *buffer
                                            int alert_size)
 {
     /* Output the alert string and count alerts. Only need to lock here. */
+    SCMutex *file_lock = &aft->file_ctx->fp_mutex;
+    SCMutexLock(file_lock);
+    aft->file_ctx->alerts++;
     aft->file_ctx->Write(buffer, alert_size, aft->file_ctx);
+    SCMutexUnlock(file_lock);
 }
 
 int AlertFastLogger(ThreadVars *tv, void *data, const Packet *p)
@@ -157,13 +161,15 @@ int AlertFastLogger(ThreadVars *tv, void *data, const Packet *p)
                 dst_port_or_icmp = p->icmp_s.code;
             }
             PrintBufferData(alert_buffer, &size, MAX_FASTLOG_ALERT_SIZE,
-                            "%s  %s[**] [%" PRIu32 ":%" PRIu32 ":%"
-                            PRIu32 "] %s [**] [Classification: %s] [Priority: %"PRIu32"]"
-                            " {%s} %s:%" PRIu32 " -> %s:%" PRIu32 "\n", timebuf, action,
-                            pa->s->gid, pa->s->id, pa->s->rev, pa->s->msg, pa->s->class_msg, pa->s->prio,
-                            proto, srcip, src_port_or_icmp, dstip, dst_port_or_icmp);
+                            "%s  %s sid=%" PRIu32 " msg=\"%s\" Classification=\"%s\" Priority=%" PRIu32 " Protocol=%s SrcIp=%s SrcPort=%" PRIu32 " DstIP=%s DstPort=%" PRIu32 "\n",
+//                            "%s  %s[**] [%" PRIu32 ":%" PRIu32 ":%"
+//                            PRIu32 "] %s [**] [Classification: %s] [Priority: %"PRIu32"]"
+//                            " {%s} %s:%" PRIu32 " -> %s:%" PRIu32 "\n",
+                            timebuf, action,
+                            pa->s->id, pa->s->msg, pa->s->class_msg, pa->s->prio,
+                            proto, srcip, p->sp, dstip, p->dp);
         } else {
-            PrintBufferData(alert_buffer, &size, MAX_FASTLOG_ALERT_SIZE, 
+            PrintBufferData(alert_buffer, &size, MAX_FASTLOG_ALERT_SIZE,
                             "%s  %s[**] [%" PRIu32 ":%" PRIu32
                             ":%" PRIu32 "] %s [**] [Classification: %s] [Priority: "
                             "%" PRIu32 "] [**] [Raw pkt: ", timebuf, action, pa->s->gid,
@@ -216,6 +222,16 @@ TmEcode AlertFastLogThreadDeinit(ThreadVars *t, void *data)
 
     SCFree(aft);
     return TM_ECODE_OK;
+}
+
+void AlertFastLogExitPrintStats(ThreadVars *tv, void *data)
+{
+    AlertFastLogThread *aft = (AlertFastLogThread *)data;
+    if (aft == NULL) {
+        return;
+    }
+
+    //SCLogInfo("Fast log output wrote %" PRIu64 " alerts", aft->file_ctx->alerts);
 }
 
 /**
