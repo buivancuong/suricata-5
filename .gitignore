@@ -5,3 +5,4 @@ libhtp/test/.deps/
 libhtp/htp/.libs/
 *.o
 *.doctree
+rust/target/
