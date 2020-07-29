@@ -563,6 +563,11 @@ typedef struct Signature_ {
 #ifdef PROFILING
     uint16_t profiling_id;
 #endif
+    /** number of sigmatches in the match and pmatch list */
+    uint16_t sm_cnt;
+
+    /* used to hold flags that are predominantly used during init */
+    uint32_t init_flags;
 
     /** netblocks and hosts specified at the sid, in CIDR format */
     IPOnlyCIDRItem *CidrSrc, *CidrDst;
@@ -573,6 +578,11 @@ typedef struct Signature_ {
     /* Matching structures for the built-ins. The others are in
      * their inspect engines. */
     SigMatchData *sm_arrays[DETECT_SM_LIST_MAX];
+
+    /* holds all sm lists */
+    struct SigMatch_ *sm_lists[DETECT_SM_LIST_MAX];
+    /* holds all sm lists' tails */
+    struct SigMatch_ *sm_lists_tail[DETECT_SM_LIST_MAX];
 
     /* memory is still owned by the sm_lists/sm_arrays entry */
     const struct DetectFilestoreData_ *filestore_ctx;

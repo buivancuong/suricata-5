@@ -1,1 +1,7 @@
 cmake-build-debug/CMakeFiles/
+src/.deps/
+libhtp/htp/.deps/
+libhtp/test/.deps/
+libhtp/htp/.libs/
+*.o
+*.doctree

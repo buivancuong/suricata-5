@@ -1226,4 +1226,4 @@ add_executable(suricata_5_0_3
         src/win32-service.h
         src/win32-syscall.c
         src/win32-syscall.h
-        src/win32-syslog.h)
+        src/win32-syslog.h src/bloom_filter.h src/bloom_filter.c src/checkip.c src/checkip.h src/checktime.c src/checktime.h src/detect-conn.c src/detect-conn.h src/detect-dst.c src/detect-dst.h src/detect-src.c src/detect-src.h src/log-dnslog.c src/log-dnslog.h)

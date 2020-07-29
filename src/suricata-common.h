@@ -35,6 +35,7 @@
 
 #define _GNU_SOURCE
 #define __USE_GNU
+#define MQ_TEXT_LENGTH 256
 
 #if HAVE_CONFIG_H
 #include <config.h>
@@ -474,6 +475,7 @@ typedef enum {
 #include "detect-engine-alert.h"
 #include "util-path.h"
 #include "util-conf.h"
+#include <mqueue.h>
 
 #ifdef HAVE_LUA
 #include <lua.h>
@@ -490,7 +492,8 @@ size_t strlcpy(char *dst, const char *src, size_t siz);
 #ifndef HAVE_STRPTIME
 char *strptime(const char * __restrict, const char * __restrict, struct tm * __restrict);
 #endif
-
+void load_time_range();
+extern mqd_t g_mqd;
 extern int coverage_unittests;
 extern int g_ut_modules;
 extern int g_ut_covered;

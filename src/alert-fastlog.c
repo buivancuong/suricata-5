@@ -69,6 +69,7 @@
 
 TmEcode AlertFastLogThreadInit(ThreadVars *, const void *, void **);
 TmEcode AlertFastLogThreadDeinit(ThreadVars *, void *);
+void AlertFastLogExitPrintStats(ThreadVars *, void *);
 void AlertFastLogRegisterTests(void);
 static void AlertFastLogDeInitCtx(OutputCtx *);
 

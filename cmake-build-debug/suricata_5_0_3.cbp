@@ -741,6 +741,24 @@
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/app-layer.h">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/bloom_filter.c">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/bloom_filter.h">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/checkip.c">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/checkip.h">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/checktime.c">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/checktime.h">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/conf-yaml-loader.c">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
@@ -1026,6 +1044,12 @@
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-classtype.h">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-conn.c">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-conn.h">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-content.c">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
@@ -1108,6 +1132,12 @@
 			<Option target="suricata_5_0_3"/>
 		</Unit>
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-dsize.h">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-dst.c">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-dst.h">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-engine-address-ipv4.c">
@@ -1887,6 +1917,12 @@
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-snmp-version.h">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-src.c">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-src.h">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/detect-ssh-proto-version.c">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
@@ -2308,6 +2344,12 @@
 			<Option target="suricata_5_0_3"/>
 		</Unit>
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/log-cf-common.h">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/log-dnslog.c">
+			<Option target="suricata_5_0_3"/>
+		</Unit>
+		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/log-dnslog.h">
 			<Option target="suricata_5_0_3"/>
 		</Unit>
 		<Unit filename="/home/cuongbv/Project/suricata-5.0.3/src/log-droplog.c">

@@ -7987,6 +7987,97 @@ CMakeFiles/suricata_5_0_3.dir/src/win32-syscall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/win32-syscall.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/win32-syscall.c -o CMakeFiles/suricata_5_0_3.dir/src/win32-syscall.c.s
 
+CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.o: CMakeFiles/suricata_5_0_3.dir/flags.make
+CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.o: ../src/bloom_filter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_611) "Building C object CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.o   -c /home/cuongbv/Project/suricata-5.0.3/src/bloom_filter.c
+
+CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuongbv/Project/suricata-5.0.3/src/bloom_filter.c > CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.i
+
+CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/bloom_filter.c -o CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.s
+
+CMakeFiles/suricata_5_0_3.dir/src/checkip.c.o: CMakeFiles/suricata_5_0_3.dir/flags.make
+CMakeFiles/suricata_5_0_3.dir/src/checkip.c.o: ../src/checkip.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_612) "Building C object CMakeFiles/suricata_5_0_3.dir/src/checkip.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/suricata_5_0_3.dir/src/checkip.c.o   -c /home/cuongbv/Project/suricata-5.0.3/src/checkip.c
+
+CMakeFiles/suricata_5_0_3.dir/src/checkip.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/suricata_5_0_3.dir/src/checkip.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuongbv/Project/suricata-5.0.3/src/checkip.c > CMakeFiles/suricata_5_0_3.dir/src/checkip.c.i
+
+CMakeFiles/suricata_5_0_3.dir/src/checkip.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/checkip.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/checkip.c -o CMakeFiles/suricata_5_0_3.dir/src/checkip.c.s
+
+CMakeFiles/suricata_5_0_3.dir/src/checktime.c.o: CMakeFiles/suricata_5_0_3.dir/flags.make
+CMakeFiles/suricata_5_0_3.dir/src/checktime.c.o: ../src/checktime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_613) "Building C object CMakeFiles/suricata_5_0_3.dir/src/checktime.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/suricata_5_0_3.dir/src/checktime.c.o   -c /home/cuongbv/Project/suricata-5.0.3/src/checktime.c
+
+CMakeFiles/suricata_5_0_3.dir/src/checktime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/suricata_5_0_3.dir/src/checktime.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuongbv/Project/suricata-5.0.3/src/checktime.c > CMakeFiles/suricata_5_0_3.dir/src/checktime.c.i
+
+CMakeFiles/suricata_5_0_3.dir/src/checktime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/checktime.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/checktime.c -o CMakeFiles/suricata_5_0_3.dir/src/checktime.c.s
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.o: CMakeFiles/suricata_5_0_3.dir/flags.make
+CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.o: ../src/detect-conn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_614) "Building C object CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.o   -c /home/cuongbv/Project/suricata-5.0.3/src/detect-conn.c
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuongbv/Project/suricata-5.0.3/src/detect-conn.c > CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.i
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/detect-conn.c -o CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.s
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.o: CMakeFiles/suricata_5_0_3.dir/flags.make
+CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.o: ../src/detect-dst.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_615) "Building C object CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.o   -c /home/cuongbv/Project/suricata-5.0.3/src/detect-dst.c
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuongbv/Project/suricata-5.0.3/src/detect-dst.c > CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.i
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/detect-dst.c -o CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.s
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.o: CMakeFiles/suricata_5_0_3.dir/flags.make
+CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.o: ../src/detect-src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_616) "Building C object CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.o   -c /home/cuongbv/Project/suricata-5.0.3/src/detect-src.c
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuongbv/Project/suricata-5.0.3/src/detect-src.c > CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.i
+
+CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/detect-src.c -o CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.s
+
+CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.o: CMakeFiles/suricata_5_0_3.dir/flags.make
+CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.o: ../src/log-dnslog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_617) "Building C object CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.o   -c /home/cuongbv/Project/suricata-5.0.3/src/log-dnslog.c
+
+CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cuongbv/Project/suricata-5.0.3/src/log-dnslog.c > CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.i
+
+CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cuongbv/Project/suricata-5.0.3/src/log-dnslog.c -o CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.s
+
 # Object files for target suricata_5_0_3
 suricata_5_0_3_OBJECTS = \
 "CMakeFiles/suricata_5_0_3.dir/ebpf/bypass_filter.c.o" \
@@ -8598,7 +8689,14 @@ suricata_5_0_3_OBJECTS = \
 "CMakeFiles/suricata_5_0_3.dir/src/util-var.c.o" \
 "CMakeFiles/suricata_5_0_3.dir/src/win32-misc.c.o" \
 "CMakeFiles/suricata_5_0_3.dir/src/win32-service.c.o" \
-"CMakeFiles/suricata_5_0_3.dir/src/win32-syscall.c.o"
+"CMakeFiles/suricata_5_0_3.dir/src/win32-syscall.c.o" \
+"CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.o" \
+"CMakeFiles/suricata_5_0_3.dir/src/checkip.c.o" \
+"CMakeFiles/suricata_5_0_3.dir/src/checktime.c.o" \
+"CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.o" \
+"CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.o" \
+"CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.o" \
+"CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.o"
 
 # External object files for target suricata_5_0_3
 suricata_5_0_3_EXTERNAL_OBJECTS =
@@ -9213,9 +9311,16 @@ suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/util-var.c.o
 suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/win32-misc.c.o
 suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/win32-service.c.o
 suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/win32-syscall.c.o
+suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/bloom_filter.c.o
+suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/checkip.c.o
+suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/checktime.c.o
+suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/detect-conn.c.o
+suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/detect-dst.c.o
+suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/detect-src.c.o
+suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/src/log-dnslog.c.o
 suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/build.make
 suricata_5_0_3: CMakeFiles/suricata_5_0_3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_611) "Linking CXX executable suricata_5_0_3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuongbv/Project/suricata-5.0.3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_618) "Linking CXX executable suricata_5_0_3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/suricata_5_0_3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
